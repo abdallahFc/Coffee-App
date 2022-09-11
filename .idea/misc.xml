@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/activity_register.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/cart_item.xml" value="0.1" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/fragment_cart.xml" value="0.1403985507246377" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/fragment_preferences.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/fragment_profile.xml" value="0.16" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/New folder/coffee shop/app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable-v24/fill_4.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/add.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/button_style_login.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/button_style_register.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/fill_1.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/fill_4.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/group_4_copy.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/group_4_copy_2.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/group_4_copy_3.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/group_copy_2.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/group_copy_3.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_account.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_add.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_artwork.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_cappuccino.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_espresso.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_fill_1.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_home.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/drawable/ic_profile.xml" value="0.124" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/activity_login.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/activity_main.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/activity_register.xml" value="0.197008547008547" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/activity_splash.xml" value="0.197008547008547" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/cart_item.xml" value="0.264" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/fragment_onboarding.xml" value="0.2" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/fragment_register.xml" value="0.2" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/fragment_splash.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/layout/item.xml" value="0.2076923076923077" />
+        <entry key="..\:/Users/Abdallah Mohamed/Desktop/coffee shop/app/src/main/res/menu/main_menu.xml" value="0.20854700854700856" />
+        <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_register.xml" value="0.20854700854700856" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

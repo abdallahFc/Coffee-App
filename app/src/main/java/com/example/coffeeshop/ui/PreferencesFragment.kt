@@ -1,4 +1,4 @@
-package com.example.coffeeshop
+package com.example.coffeeshop.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import com.example.coffeeshop.R
 
 class PreferencesFragment : Fragment(R.layout.fragment_preferences) {
 
@@ -23,7 +24,7 @@ class PreferencesFragment : Fragment(R.layout.fragment_preferences) {
         super.onViewCreated(view, savedInstanceState)
         val prefBtn=view.findViewById<Button>(R.id.btn_add_to_cart)
         prefBtn.setOnClickListener {
-            findNavController().navigate(PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
+            findNavController().navigate(com.example.coffeeshop.PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
         }
     }
 

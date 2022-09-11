@@ -1,10 +1,10 @@
-package com.example.coffeeshop
+package com.example.coffeeshop.viewmodel
 
 
 
 import androidx.lifecycle.ViewModel
 import com.example.coffeeshop.R.drawable
-import com.example.coffeeshop.HomeItem
+import com.example.coffeeshop.data.CartItem
 
 class CartViewModel : ViewModel() {
     fun getAdapterList(): List<CartItem> {

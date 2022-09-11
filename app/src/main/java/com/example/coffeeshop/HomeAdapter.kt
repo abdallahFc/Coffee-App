@@ -7,10 +7,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeeshop.R.id
 import com.example.coffeeshop.R.layout
+import com.example.coffeeshop.data.Product
 
 class HomeAdapter(
-    private val list: List<HomeItem>,
-    val clickCallBack: (HomeItem) -> Unit = {}
+    private val list: List<Product>,
+    val clickCallBack: (Product) -> Unit = {}
 ) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView

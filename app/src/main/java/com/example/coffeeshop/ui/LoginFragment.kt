@@ -1,21 +1,21 @@
-package com.example.coffeeshop
-
+package com.example.coffeeshop.ui
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.coffeeshop.R
 
-
-class RegisterFragment : Fragment(R.layout.fragment_register) {
+class LoginFragment : Fragment(R.layout.fragment_login) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val loginTx=view.findViewById<TextView>(R.id.tx_goLogin)
-        loginTx.setOnClickListener{
+        val loginBtn=view.findViewById<TextView>(R.id.login_btn)
+        loginBtn.setOnClickListener{
             findNavController().navigate(
-                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+                com.example.coffeeshop.LoginFragmentDirections.actionLoginFragmentToHomeFragment()
             )
         }
+
     }
 
 }

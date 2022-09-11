@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeeshop.R.id
 import com.example.coffeeshop.R.layout
+import com.example.coffeeshop.data.CartItem
 
 class CartAdapter(
     private val list: List<CartItem>) : RecyclerView.Adapter<CartAdapter.ViewHolder>() {

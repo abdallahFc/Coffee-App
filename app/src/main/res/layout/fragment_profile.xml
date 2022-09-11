@@ -13,26 +13,9 @@
         android:layout_height="match_parent"
         >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/iv_coffee"
-            android:contentDescription="@string/logo"
-            android:src="@drawable/iv_logo"
-            app:layout_constraintBottom_toBottomOf="@+id/guideline2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guideline2"
-            tools:ignore="ImageContrastCheck" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintGuide_percent=".18"
-            app:layout_constraintStart_toStartOf="parent" />
+
+
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
@@ -40,9 +23,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintGuide_percent=".45"
+            app:layout_constraintGuide_percent=".1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_coffee"
+            app:layout_constraintTop_toTopOf="parent"
             />
 
         <TextView
@@ -51,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:fontFamily="@font/fontsfree_net_sf_ui_display_medium"
-            android:text="@string/personal_and_account_information"
+            android:text="@string/account_information"
             android:textColor="@color/black"
             android:textSize="@dimen/_25sdp"
             app:layout_constraintBottom_toBottomOf="@id/guideline3"
@@ -80,7 +63,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_19sdp"
             android:fontFamily="@font/poppins_regular"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
 
             app:layout_constraintStart_toStartOf="@+id/personal_info"
             app:layout_constraintTop_toBottomOf="@+id/personal_info" />

@@ -6,25 +6,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.coffeeshop.R
 
 class PreferencesFragment : Fragment(R.layout.fragment_preferences) {
 
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_preferences, container, false)
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val prefBtn=view.findViewById<Button>(R.id.btn_add_to_cart)
+        val smallCoffe=view.findViewById<ImageView>(R.id.iv_coffee_small)
+        val midCoffe=view.findViewById<ImageView>(R.id.iv_coffee_med)
+        val largeCoffe=view.findViewById<ImageView>(R.id.iv_coffe_large)
         prefBtn.setOnClickListener {
-            findNavController().navigate(com.example.coffeeshop.PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
+            findNavController().navigate(PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
+        }
+        smallCoffe.setOnClickListener{
+            smallCoffe.setColorFilter(R.color.black)
         }
     }
 

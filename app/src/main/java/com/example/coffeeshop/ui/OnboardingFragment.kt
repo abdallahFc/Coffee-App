@@ -13,10 +13,10 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         val loginBtn=view.findViewById<Button>(R.id.btn_login)
         val registerBtn=view.findViewById<Button>(R.id.btn_register)
         loginBtn.setOnClickListener {
-            findNavController().navigate(com.example.coffeeshop.OnboardingFragmentDirections.actionOnboardingFragmentToLoginFragment())
+            findNavController().navigate(OnboardingFragmentDirections.actionOnboardingFragmentToLoginFragment())
         }
         registerBtn.setOnClickListener {
-            findNavController().navigate(com.example.coffeeshop.OnboardingFragmentDirections.actionOnboardingFragmentToRegisterFragment())
+            findNavController().navigate(OnboardingFragmentDirections.actionOnboardingFragmentToRegisterFragment())
         }
     }
 

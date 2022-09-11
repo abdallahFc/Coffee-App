@@ -14,7 +14,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         val loginTx=view.findViewById<TextView>(R.id.tx_goLogin)
         loginTx.setOnClickListener{
             findNavController().navigate(
-                com.example.coffeeshop.RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
+                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
             )
         }
     }

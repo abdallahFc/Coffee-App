@@ -198,7 +198,6 @@
             android:src="@drawable/iv_coffe_med"
             app:layout_constraintBottom_toBottomOf="@+id/iv_coffee_small"
             app:layout_constraintEnd_toStartOf="@id/iv_coffe_large"
-
             app:layout_constraintStart_toEndOf="@id/iv_coffee_small"
             app:layout_constraintTop_toTopOf="@+id/iv_coffee_small" />
 

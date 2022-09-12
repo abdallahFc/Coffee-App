@@ -11,4 +11,5 @@
     <color name="buttonColor">#B98068</color>
     <color name="textColor">#8C746A</color>
     <color name="log_out_color">#9f634d</color>
+    <color name="gray">#808080</color>
 </resources>

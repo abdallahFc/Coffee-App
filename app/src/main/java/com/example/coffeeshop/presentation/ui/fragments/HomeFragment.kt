@@ -35,7 +35,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private fun onItemClicked(item: Product)
     {
-        findNavController().navigate(com.example.coffeeshop.presentation.ui.HomeFragmentDirections.actionHomeFragmentToPreferencesFragment())
+        findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToPreferencesFragment())
         Toast.makeText(requireContext(), item.toString(), Toast.LENGTH_SHORT).show()
 
     }

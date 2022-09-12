@@ -26,6 +26,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         registerViewModel.liveData.observe(viewLifecycleOwner){
             it?.let { response ->
                 when(response){
+                    //
                     is NetworkResult.Success -> Toast.makeText(requireContext(), "user: ${response.data.toString()}", Toast.LENGTH_LONG).show()
                     is NetworkResult.Error -> Toast.makeText(requireContext(), "user: ${response.message}", Toast.LENGTH_LONG).show()
                     else ->{

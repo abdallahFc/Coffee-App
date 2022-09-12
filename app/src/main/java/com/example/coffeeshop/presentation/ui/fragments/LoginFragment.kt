@@ -12,7 +12,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         val loginBtn=view.findViewById<TextView>(R.id.login_btn)
         loginBtn.setOnClickListener{
             findNavController().navigate(
-                com.example.coffeeshop.presentation.ui.LoginFragmentDirections.actionLoginFragmentToHomeFragment()
+                LoginFragmentDirections.actionLoginFragmentToHomeFragment()
             )
         }
 

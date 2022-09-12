@@ -14,6 +14,7 @@
             android:id="@+id/tv_preferences"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
             android:layout_marginTop="@dimen/_10sdp"
             android:text="@string/preferences"
             android:textSize="@dimen/_20sdp"
@@ -89,11 +90,25 @@
             android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="36 EGP"
+            android:text="36"
+            android:textColor="@color/black"
             android:textSize="@dimen/_15sdp"
             app:layout_constraintBottom_toTopOf="@id/line"
             app:layout_constraintStart_toStartOf="@+id/category"
             app:layout_constraintTop_toBottomOf="@id/category" />
+
+        <TextView
+            android:id="@+id/egp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="EGP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@id/line"
+            app:layout_constraintStart_toEndOf="@+id/price"
+            app:layout_constraintTop_toBottomOf="@id/category"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/add"
@@ -125,6 +140,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
+            android:textColor="@color/black"
             android:textSize="@dimen/_20sdp"
             app:layout_constraintBottom_toTopOf="@id/line"
             app:layout_constraintEnd_toStartOf="@+id/remove"
@@ -341,11 +357,11 @@
             android:id="@+id/btn_add_to_cart"
             android:layout_width="@dimen/_200sdp"
             android:layout_height="wrap_content"
-            app:cornerRadius="@dimen/_10sdp"
-            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/_20sdp"
             android:backgroundTint="@color/log_out_color"
             android:text="@string/add_to_cart"
-            android:layout_marginBottom="@dimen/_20sdp"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/guideline4"
             app:layout_constraintStart_toStartOf="@id/guideline4" />
@@ -355,11 +371,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total"
+            android:textColor="@color/black"
             android:textSize="@dimen/_22sdp"
             app:layout_constraintBottom_toBottomOf="@+id/tv_total_Price"
             app:layout_constraintStart_toStartOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="@+id/tv_total_Price" />
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

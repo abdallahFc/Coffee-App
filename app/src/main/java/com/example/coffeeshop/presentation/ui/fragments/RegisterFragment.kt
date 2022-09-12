@@ -15,7 +15,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
     private val registerViewModel:RegisterViewModel by viewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        registerViewModel.register(RegisterRequest("Seif","seif2@gmail.com","123456abcdew"))
+        registerViewModel.register(RegisterRequest("Seif","seeif2@gmail.com","123456abcdew"))
         /*val loginTx=view.findViewById<TextView>(R.id.tx_goLogin)
         loginTx.setOnClickListener{
             findNavController().navigate(

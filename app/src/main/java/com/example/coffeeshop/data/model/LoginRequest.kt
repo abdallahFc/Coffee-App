@@ -1,5 +1,5 @@
 package com.example.coffeeshop.data.model
 
-class LoginRequest(email:String,password:String) {
+data class LoginRequest(val userName:String,
+                        val password:String)
 
-}

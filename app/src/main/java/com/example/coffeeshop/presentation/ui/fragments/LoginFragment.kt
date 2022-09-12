@@ -1,4 +1,4 @@
-package com.example.coffeeshop.ui
+package com.example.coffeeshop.presentation.ui.fragments
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -12,7 +12,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         val loginBtn=view.findViewById<TextView>(R.id.login_btn)
         loginBtn.setOnClickListener{
             findNavController().navigate(
-                LoginFragmentDirections.actionLoginFragmentToHomeFragment()
+                com.example.coffeeshop.presentation.ui.LoginFragmentDirections.actionLoginFragmentToHomeFragment()
             )
         }
 

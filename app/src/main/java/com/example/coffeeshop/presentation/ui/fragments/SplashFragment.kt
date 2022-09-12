@@ -1,4 +1,4 @@
-package com.example.coffeeshop.ui
+package com.example.coffeeshop.presentation.ui.fragments
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment

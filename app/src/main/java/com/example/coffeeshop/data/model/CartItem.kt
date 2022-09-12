@@ -1,3 +1,3 @@
-package com.example.coffeeshop.data
+package com.example.coffeeshop.data.model
 
 data class CartItem(val image:Int,val name:String,val count:Int,val price:Int)

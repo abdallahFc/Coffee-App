@@ -1,10 +1,8 @@
-package com.example.coffeeshop.ui
+package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
@@ -20,7 +18,7 @@ class PreferencesFragment : Fragment(R.layout.fragment_preferences) {
         val midCoffe=view.findViewById<ImageView>(R.id.iv_coffee_med)
         val largeCoffe=view.findViewById<ImageView>(R.id.iv_coffe_large)
         prefBtn.setOnClickListener {
-            findNavController().navigate(PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
+            findNavController().navigate(com.example.coffeeshop.presentation.ui.PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
         }
         smallCoffe.setOnClickListener{
             smallCoffe.setColorFilter(R.color.black)

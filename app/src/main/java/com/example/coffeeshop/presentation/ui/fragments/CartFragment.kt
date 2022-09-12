@@ -1,4 +1,4 @@
-package com.example.coffeeshop.ui
+package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,8 @@ import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.coffeeshop.CartAdapter
-import com.example.coffeeshop.viewmodel.CartViewModel
+import com.example.coffeeshop.presentation.ui.adapter.CartAdapter
+import com.example.coffeeshop.presentation.viewmodel.CartViewModel
 import com.example.coffeeshop.R
 
 

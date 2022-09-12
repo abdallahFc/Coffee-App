@@ -1,4 +1,5 @@
-package com.example.coffeeshop
+package com.example.coffeeshop.presentation.ui.adapter
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,19 +8,22 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeeshop.R.id
 import com.example.coffeeshop.R.layout
-import com.example.coffeeshop.data.Product
+import com.example.coffeeshop.data.model.CartItem
 
-class HomeAdapter(
-    private val list: List<Product>,
-    val clickCallBack: (Product) -> Unit = {}
-) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+class CartAdapter(
+    private val list: List<CartItem>) : RecyclerView.Adapter<CartAdapter.ViewHolder>() {
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView
-        val textView: TextView
+        val name: TextView
+        val price:TextView
+        val count:TextView
 
         init {
-            imageView = itemView.findViewById(id.iv_photo)
-            textView = itemView.findViewById(id.tv_product_name)
+            imageView = itemView.findViewById(id.cart_Image)
+            name = itemView.findViewById(id.cart_title)
+            price=itemView.findViewById(id.item_cart_price)
+            count=itemView.findViewById(id.tv_quantityNum)
         }
     }
 
@@ -27,11 +31,8 @@ class HomeAdapter(
         parent: ViewGroup,
         viewType: Int
     ): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(layout.item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(layout.cart_item, parent, false)
         val vh = ViewHolder(view)
-        vh.itemView.setOnClickListener {
-            clickCallBack(list[vh.adapterPosition])
-        }
         return vh
     }
 
@@ -41,7 +42,9 @@ class HomeAdapter(
     ) {
         val item = list[position]
         holder.imageView.setImageResource(item.image)
-        holder.textView.text = item.name
+        holder.name.text=item.name
+        holder.count.text= item.count.toString()
+        holder.price.text= item.price.toString()
     }
 
     override fun getItemCount(): Int {

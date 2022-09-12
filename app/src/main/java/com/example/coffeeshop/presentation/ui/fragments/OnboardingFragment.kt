@@ -1,4 +1,4 @@
-package com.example.coffeeshop.ui
+package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,10 +13,10 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         val loginBtn=view.findViewById<Button>(R.id.btn_login)
         val registerBtn=view.findViewById<Button>(R.id.btn_register)
         loginBtn.setOnClickListener {
-            findNavController().navigate(OnboardingFragmentDirections.actionOnboardingFragmentToLoginFragment())
+            findNavController().navigate(com.example.coffeeshop.presentation.ui.OnboardingFragmentDirections.actionOnboardingFragmentToLoginFragment())
         }
         registerBtn.setOnClickListener {
-            findNavController().navigate(OnboardingFragmentDirections.actionOnboardingFragmentToRegisterFragment())
+            findNavController().navigate(com.example.coffeeshop.presentation.ui.OnboardingFragmentDirections.actionOnboardingFragmentToRegisterFragment())
         }
     }
 

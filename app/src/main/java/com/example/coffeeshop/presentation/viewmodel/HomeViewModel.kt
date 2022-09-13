@@ -22,12 +22,18 @@ class HomeViewModel : ViewModel() {
         MutableLiveData()
     }
     var liveData: LiveData<NetworkResult<List<Product>>> =mutableLiveData
-    fun getAllProducts(token:String){
+    fun getAllProducts(token:String) {
+        var list:List<Product>?=null
         viewModelScope.launch {
             response=apis.getAllProducts("Bearer $token")
             when{
-                response.isSuccessful-> mutableLiveData.postValue(NetworkResult.Success(response.body()!!))
-                response.code() !=200-> mutableLiveData.postValue(NetworkResult.Error(response.code().toString()))
+                response.isSuccessful->{ mutableLiveData.postValue(NetworkResult.Success(response.body()!!))
+                list=response.body();
+
+                }
+                response.code() !=200->{ mutableLiveData.postValue(NetworkResult.Error(response.code().toString()))
+
+                }
             }
         }
 

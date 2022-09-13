@@ -1,6 +1,7 @@
 package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
@@ -34,7 +35,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
          homeViewModel.liveData.observe(viewLifecycleOwner){
           it.let{response->
               when(response){
-                  is NetworkResult.Success ->Toast.makeText(requireContext(),"success",Toast.LENGTH_LONG).show()
+                  is NetworkResult.Success ->{
+                      Log.d("HomeFragment", response.data.toString())}
                   is NetworkResult.Error -> Toast.makeText(requireContext(),response.message,Toast.LENGTH_LONG).show()
                   else -> {}
               }

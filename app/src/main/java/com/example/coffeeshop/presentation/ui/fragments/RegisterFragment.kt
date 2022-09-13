@@ -2,9 +2,7 @@ package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -23,6 +21,8 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         val etPass = view.findViewById<EditText>(R.id.tx_pass)
         val etcPass = view.findViewById<EditText>(R.id.tx_conPass)
         val btn = view.findViewById<Button>(R.id.btn_register)
+        val back=view.findViewById<ImageView>(R.id.arrow_back)
+        val go=view.findViewById<TextView>(R.id.tx_goLogin)
         btn.setOnClickListener {
             val email = etEmail?.text.toString()
             val password = etPass?.text.toString()
@@ -61,6 +61,12 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                     }
                 }
             }
+        }
+        back.setOnClickListener {
+            getActivity()?.onBackPressed();
+        }
+        go.setOnClickListener {
+            findNavController().navigate(RegisterFragmentDirections.actionRegisterFragmentToLoginFragment())
         }
     }
 

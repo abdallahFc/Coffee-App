@@ -31,7 +31,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             onItemClicked(it)
         }*/
        //    recyclerView.adapter = adapter
-        homeViewModel.getAllProducts("eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXplbSIsImV4cCI6MTY2MzEwNjgyMSwiaWF0IjoxNjYzMDcwODIxfQ.sVF2thYoRppPb5pF4V_Na0NUwKOnFWZ5kMJVbPfClVs")
+        homeViewModel.getAllProducts("eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXplbSIsImV4cCI6MTY2MzE0MzY2MiwiaWF0IjoxNjYzMTA3NjYyfQ.LCstQRexKpaTCYG4gm4k-f7TNk3gfLVA8K-l6wJqSMw")
          homeViewModel.liveData.observe(viewLifecycleOwner){
           it.let{response->
               when(response){

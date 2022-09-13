@@ -40,8 +40,8 @@ class HomeAdapter(
         position: Int
     ) {
         val item = list[position]
-        holder.imageView.setImageResource(item.image)
-        holder.textView.text = item.name
+        //holder.imageView.setImageResource(item.image)
+        //holder.textView.text = item.name
     }
 
     override fun getItemCount(): Int {

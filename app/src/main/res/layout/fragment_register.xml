@@ -25,9 +25,9 @@
             android:textColor="@color/textColor"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/addToCartButton"
-            app:layout_constraintStart_toStartOf="@+id/addToCartButton"
-            app:layout_constraintTop_toBottomOf="@+id/addToCartButton"
+            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+            app:layout_constraintStart_toStartOf="@+id/btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register"
             app:layout_constraintVertical_bias="0.01" />
 
 
@@ -96,6 +96,7 @@
             app:layout_constraintVertical_bias="0.14">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tx_fullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
@@ -122,6 +123,7 @@
             app:layout_constraintVertical_bias="0.041">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tx_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -149,6 +151,7 @@
             app:layout_constraintVertical_bias="0.045">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tx_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -176,6 +179,7 @@
             app:layout_constraintVertical_bias="0.035">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tx_conPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -185,7 +189,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/addToCartButton"
+            android:id="@+id/btn_register"
             style="@style/button_style"
             android:layout_marginStart="@dimen/_18sdp"
             android:layout_marginEnd="@dimen/_18sdp"

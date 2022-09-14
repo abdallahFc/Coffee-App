@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.example.coffeeshop.R
 import com.example.coffeeshop.data.model.PersonalInfo
 
@@ -28,5 +30,10 @@ class ProfileFragment : Fragment() {
         var email= view.findViewById<TextView>(R.id.value_email)
         userName.text= PersonalInfo.getInstance().userName.toString()
         email.text=PersonalInfo.getInstance().mail.toString()
+        var logOut=view.findViewById<Button>(R.id.btn_log_out_)
+        logOut.setOnClickListener {
+            findNavController().navigate(ProfileFragmentDirections.actionProfileFragmentToLoginFragment())
+        }
     }
+
 }

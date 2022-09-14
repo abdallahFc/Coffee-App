@@ -1,7 +1,9 @@
 package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -14,6 +16,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class RegisterFragment : Fragment(R.layout.fragment_register) {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_register, container, false)
+    }
     private val registerViewModel: RegisterViewModel by viewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

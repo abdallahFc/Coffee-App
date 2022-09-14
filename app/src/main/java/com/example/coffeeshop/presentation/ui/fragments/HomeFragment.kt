@@ -1,11 +1,16 @@
 package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +23,8 @@ import com.example.coffeeshop.util.NetworkResult
 
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
+
+
     private val homeViewModel: HomeViewModel by viewModels()
     private lateinit var adapter: HomeAdapter
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -55,6 +62,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
 
     private fun onItemClicked(item: Product) {
+
         findNavController().navigate(
             HomeFragmentDirections.actionHomeFragmentToPreferencesFragment(
                 item.name,

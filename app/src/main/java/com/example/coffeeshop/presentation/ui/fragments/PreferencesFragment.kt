@@ -2,8 +2,10 @@ package com.example.coffeeshop.presentation.ui.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -30,7 +32,13 @@ class PreferencesFragment : Fragment(R.layout.fragment_preferences) {
     private lateinit var remove: ImageView
     private lateinit var image: ImageView
     private lateinit var name: TextView
-
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_preferences, container, false)
+    }
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -72,7 +80,7 @@ class PreferencesFragment : Fragment(R.layout.fragment_preferences) {
             }
             Toast.makeText(requireContext(), "$totalCount", Toast.LENGTH_SHORT)
                 .show()
-            findNavController().navigate(PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
+           // findNavController().navigate(PreferencesFragmentDirections.actionPreferencesFragmentToCartFragment())
         }
         smallCoffee.setOnClickListener {
             smallCoffee.setColorFilter(R.color.black)

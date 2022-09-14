@@ -98,6 +98,7 @@
 
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_log_out_"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/log_out_color"

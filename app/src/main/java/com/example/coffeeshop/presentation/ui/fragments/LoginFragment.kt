@@ -1,7 +1,9 @@
 package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
@@ -11,10 +13,18 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.coffeeshop.R
 import com.example.coffeeshop.data.model.LoginRequest
+import com.example.coffeeshop.data.model.PersonalInfo
 import com.example.coffeeshop.presentation.viewmodel.LoginViewModel
 import com.example.coffeeshop.util.NetworkResult
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_login, container, false)
+    }
     private val loginViewModel: LoginViewModel by viewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -38,6 +48,8 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                     it.let { response ->
                         when (response) {
                             is NetworkResult.Success -> {
+                                PersonalInfo.getInstance().mail= response.data!!.email
+                                PersonalInfo.getInstance().userName= response.data!!.userName
                                 findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToHomeFragment())
                                 Toast.makeText(requireContext(), "Successfully Login", Toast.LENGTH_SHORT)
                                     .show()

@@ -1,8 +1,10 @@
 package com.example.coffeeshop.presentation.ui.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +18,13 @@ import java.util.ArrayList
 
 class CartFragment : Fragment(R.layout.fragment_cart) {
     private lateinit var adapter: CartAdapter
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_cart, container, false)
+    }
     override fun onViewCreated(
         view: View,
         savedInstanceState: Bundle?

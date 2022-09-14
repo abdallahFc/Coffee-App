@@ -57,7 +57,11 @@
         android:id="@+id/profileFragment"
         android:name="com.example.coffeeshop.presentation.ui.fragments.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.coffeeshop.presentation.ui.fragments.HomeFragment"
@@ -65,8 +69,7 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_preferencesFragment"
-            app:destination="@id/preferencesFragment"
-            />
+            app:destination="@id/preferencesFragment" />
 
     </fragment>
     <fragment

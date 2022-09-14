@@ -15,7 +15,8 @@
             app:destination="@id/registerFragment" />
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/main_navigation" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -64,7 +65,9 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_preferencesFragment"
-            app:destination="@id/preferencesFragment" />
+            app:destination="@id/preferencesFragment"
+            />
+
     </fragment>
     <fragment
         android:id="@+id/preferencesFragment"

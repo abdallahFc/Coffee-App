@@ -4,8 +4,12 @@ package com.example.coffeeshop.presentation.ui.activity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import com.example.coffeeshop.R
+import com.example.coffeeshop.presentation.ui.fragments.CartFragment
+import com.example.coffeeshop.presentation.ui.fragments.HomeFragment
+import com.example.coffeeshop.presentation.ui.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -29,5 +33,27 @@ class MainActivity : AppCompatActivity() {
                 bottomNav.visibility = View.VISIBLE
             }
         }
+
+        bottomNav.setOnItemSelectedListener { item ->
+            bottomNav.menu.findItem(item.itemId).isChecked = true
+            var fragment: Fragment? = null
+            if (item.itemId == R.id.home)
+                fragment = HomeFragment()
+            else if (item.itemId == R.id.profile)
+                fragment = ProfileFragment()
+            else if (item.itemId == R.id.addProduct)
+                fragment = CartFragment()
+
+            if (fragment != null) {
+                showFragment(fragment)
+            }
+            false
+        }
+    }
+    private fun showFragment(fragment: Fragment){
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragmentContainerView,fragment)
+            .commit()
     }
 }

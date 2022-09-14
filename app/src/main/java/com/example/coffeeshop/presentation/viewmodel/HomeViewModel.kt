@@ -6,6 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.coffeeshop.data.model.PersonalInfo
 
 import com.example.coffeeshop.data.model.Product
 import com.example.coffeeshop.data.network.APIs
@@ -27,7 +28,8 @@ class HomeViewModel : ViewModel() {
         viewModelScope.launch {
             response=apis.getAllProducts("Bearer $token")
             when{
-                response.isSuccessful->{ mutableLiveData.postValue(NetworkResult.Success(response.body()!!))
+                response.isSuccessful->{
+                    mutableLiveData.postValue(NetworkResult.Success(response.body()!!))
                 list=response.body();
 
                 }

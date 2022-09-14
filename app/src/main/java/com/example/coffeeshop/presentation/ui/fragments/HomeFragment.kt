@@ -13,6 +13,7 @@ import com.example.coffeeshop.presentation.ui.adapter.HomeAdapter
 import com.example.coffeeshop.data.model.Product
 import com.example.coffeeshop.presentation.viewmodel.HomeViewModel
 import com.example.coffeeshop.R
+import com.example.coffeeshop.data.model.PersonalInfo
 import com.example.coffeeshop.util.NetworkResult
 
 
@@ -25,7 +26,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val recyclerView = view.findViewById<RecyclerView>(R.id.productRv)
         recyclerView.layoutManager = layoutManager
         var list: List<Product>
-        homeViewModel.getAllProducts("eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXplbSIsImV4cCI6MTY2MzE0MzY2MiwiaWF0IjoxNjYzMTA3NjYyfQ.LCstQRexKpaTCYG4gm4k-f7TNk3gfLVA8K-l6wJqSMw")
+        homeViewModel.getAllProducts(PersonalInfo.getInstance().token.toString())
         homeViewModel.liveData.observe(viewLifecycleOwner) {
             it.let { response ->
                 when (response) {

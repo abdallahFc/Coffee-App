@@ -39,7 +39,7 @@ class HomeAdapter(
     override fun onBindViewHolder(
         holder: ViewHolder,
         position: Int
-    ) {
+    ){
         val item = list[position]
         holder.textView.text = item.name
         Glide.with(holder.imageView).load(item.image).into(holder.imageView)

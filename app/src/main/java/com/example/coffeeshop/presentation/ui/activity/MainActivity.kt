@@ -7,9 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import com.example.coffeeshop.R
+import com.example.coffeeshop.data.model.PersonalInfo
 import com.example.coffeeshop.presentation.ui.fragments.CartFragment
 import com.example.coffeeshop.presentation.ui.fragments.HomeFragment
 import com.example.coffeeshop.presentation.ui.fragments.ProfileFragment
+import com.example.coffeeshop.presentation.viewmodel.HomeViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -37,8 +39,10 @@ class MainActivity : AppCompatActivity() {
         bottomNav.setOnItemSelectedListener { item ->
             bottomNav.menu.findItem(item.itemId).isChecked = true
             var fragment: Fragment? = null
-            if (item.itemId == R.id.home)
+            if (item.itemId == R.id.home){
+            HomeViewModel().getAllProducts(PersonalInfo.getInstance().token.toString())
                 fragment = HomeFragment()
+            }
             else if (item.itemId == R.id.profile)
                 fragment = ProfileFragment()
             else if (item.itemId == R.id.addProduct)

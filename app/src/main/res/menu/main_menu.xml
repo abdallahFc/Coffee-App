@@ -10,6 +10,6 @@
         android:title="Profile" />
     <item
         android:id="@+id/addProduct"
-        android:icon="@drawable/ic_fill_1"
+        android:icon="@drawable/ic_cart"
         android:title="cart" />
 </menu>

@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.coffeeshop.R.id
 import com.example.coffeeshop.R.layout
 import com.example.coffeeshop.data.model.CartItem
@@ -41,10 +42,10 @@ class CartAdapter(
         position: Int
     ) {
         val item = list[position]
-        holder.imageView.setImageResource(item.image)
+        Glide.with(holder.imageView).load(item.image).into(holder.imageView)
         holder.name.text=item.name
-        holder.count.text= item.count.toString()
-        holder.price.text= item.price.toString()
+        holder.count.text= item.count
+        holder.price.text= item.price
     }
 
     override fun getItemCount(): Int {

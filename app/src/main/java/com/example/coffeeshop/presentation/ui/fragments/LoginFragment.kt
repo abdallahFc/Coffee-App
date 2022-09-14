@@ -1,6 +1,5 @@
 package com.example.coffeeshop.presentation.ui.fragments
 
-import android.net.Network
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -38,9 +37,12 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 loginViewModel.liveData.observe(viewLifecycleOwner) {
                     it.let { response ->
                         when (response) {
-                            is NetworkResult.Success -> findNavController().navigate(
-                                LoginFragmentDirections.actionLoginFragmentToHomeFragment()
-                            )
+                            is NetworkResult.Success -> {
+                                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToHomeFragment())
+                                Toast.makeText(requireContext(), "Successfully Login", Toast.LENGTH_SHORT)
+                                    .show()
+                            }
+
                             is NetworkResult.Error -> Toast.makeText(
                                 requireContext(),
                                 "error: ${response.message}",
@@ -55,7 +57,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             }
         }
         back.setOnClickListener {
-            getActivity()?.onBackPressed();
+            activity?.onBackPressed()
         }
         goRegister.setOnClickListener {
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment())

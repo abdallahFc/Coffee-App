@@ -1,5 +1,6 @@
-package com.example.coffeeshop.data.model
+package com.example.coffeeshop.presentation.viewmodel
 
+import com.example.coffeeshop.data.model.CartItem
 import java.util.ArrayList
 
 class AddToCart {
@@ -8,8 +9,8 @@ class AddToCart {
      var list:ArrayList<CartItem>?=null
      //private var instance:AddToCart?=null
     fun getInstance():ArrayList<CartItem>{
-       if(list==null){
-           list=ArrayList()
+       if(list ==null){
+           list =ArrayList()
        }
 
 

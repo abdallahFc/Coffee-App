@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_60sdp">
+    android:layout_height="@dimen/_80sdp">
 
     <ImageView
         android:id="@+id/cart_Image"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
         android:layout_marginStart="24dp"
         android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,6 @@
             android:id="@+id/tv_quantity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_2sdp"
             android:text="quantity :"
             android:textColor="@color/black"
             />
@@ -54,9 +53,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:textColor="@color/black"
             android:text="2"
-             />
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <TextView
@@ -65,12 +63,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="6dp"
         android:text="60"
-        android:textSize="15sp"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/cart_title"
         app:layout_constraintEnd_toStartOf="@id/tv_egp"
         app:layout_constraintTop_toTopOf="@+id/cart_title"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tv_egp"

@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.coffeeshop.R.id
 import com.example.coffeeshop.R.layout
 import com.example.coffeeshop.data.model.Product
@@ -40,8 +41,8 @@ class HomeAdapter(
         position: Int
     ) {
         val item = list[position]
-        //holder.imageView.setImageResource(item.image)
-        //holder.textView.text = item.name
+        holder.textView.text = item.name
+        Glide.with(holder.imageView).load(item.image).into(holder.imageView)
     }
 
     override fun getItemCount(): Int {

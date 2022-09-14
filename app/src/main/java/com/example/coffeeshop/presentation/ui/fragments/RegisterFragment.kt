@@ -10,6 +10,7 @@ import com.example.coffeeshop.R
 import com.example.coffeeshop.data.model.RegisterRequest
 import com.example.coffeeshop.util.NetworkResult
 import com.example.coffeeshop.presentation.viewmodel.RegisterViewModel
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class RegisterFragment : Fragment(R.layout.fragment_register) {
@@ -46,9 +47,12 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                     it?.let { response ->
                         when (response) {
                             //
-                            is NetworkResult.Success -> findNavController().navigate(
+                            is NetworkResult.Success -> {findNavController().navigate(
                                 RegisterFragmentDirections.actionRegisterFragmentToLoginFragment()
                             )
+                                Toast.makeText(requireContext(), "Successfully Register", Toast.LENGTH_SHORT)
+                                    .show()
+                            }
                             is NetworkResult.Error -> Toast.makeText(
                                 requireContext(),
                                 "user: ${response.message}",
@@ -63,7 +67,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
             }
         }
         back.setOnClickListener {
-            getActivity()?.onBackPressed();
+            activity?.onBackPressed()
         }
         go.setOnClickListener {
             findNavController().navigate(RegisterFragmentDirections.actionRegisterFragmentToLoginFragment())

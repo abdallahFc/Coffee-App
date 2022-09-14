@@ -52,7 +52,11 @@
         android:id="@+id/cartFragment"
         android:name="com.example.coffeeshop.presentation.ui.fragments.CartFragment"
         android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.coffeeshop.presentation.ui.fragments.ProfileFragment"

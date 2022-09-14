@@ -71,6 +71,7 @@
         <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
         <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_home.xml" value="0.16" />
         <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_login.xml" value="0.20854700854700856" />
+        <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_onboarding.xml" value="0.20854700854700856" />
         <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_preferences.xml" value="0.1824074074074074" />
         <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_profile.xml" value="0.20854700854700856" />
         <entry key="..\:/coffee shop/app/src/main/res/layout/fragment_register.xml" value="0.20854700854700856" />
@@ -78,7 +79,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

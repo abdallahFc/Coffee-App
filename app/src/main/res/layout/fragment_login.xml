@@ -19,7 +19,7 @@
             android:layout_marginStart="@dimen/_18sdp"
             android:layout_marginTop="@dimen/_2sdp"
             android:layout_marginEnd="@dimen/_18sdp"
-            android:hint="@string/username"
+            android:hint="@string/email"
             android:textColorHint="@color/black"
             app:boxStrokeColor="@color/textColor"
             app:hintTextColor="@color/textColor"

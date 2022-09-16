@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.coffeeshop.R
+import com.example.coffeeshop.data.model.AddToCart
 import com.example.coffeeshop.data.model.PersonalInfo
 
 
@@ -32,6 +33,7 @@ class ProfileFragment : Fragment() {
         email.text=PersonalInfo.getInstance().mail.toString()
         var logOut=view.findViewById<Button>(R.id.btn_log_out_)
         logOut.setOnClickListener {
+            AddToCart.getInstance().clear()
             findNavController().navigate(ProfileFragmentDirections.actionProfileFragmentToLoginFragment())
         }
     }

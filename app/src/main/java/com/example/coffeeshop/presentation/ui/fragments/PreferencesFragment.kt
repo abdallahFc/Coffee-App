@@ -10,10 +10,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.coffeeshop.R
-import com.example.coffeeshop.presentation.viewmodel.AddToCart
+import com.example.coffeeshop.data.model.AddToCart
 import com.example.coffeeshop.data.model.CartItem
 import java.util.ArrayList
 

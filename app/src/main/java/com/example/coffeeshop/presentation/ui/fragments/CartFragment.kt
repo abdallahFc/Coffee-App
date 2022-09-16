@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeeshop.presentation.ui.adapter.CartAdapter
 
 import com.example.coffeeshop.R
-import com.example.coffeeshop.presentation.viewmodel.AddToCart
+import com.example.coffeeshop.data.model.AddToCart
 import com.example.coffeeshop.data.model.CartItem
 import java.util.ArrayList
 

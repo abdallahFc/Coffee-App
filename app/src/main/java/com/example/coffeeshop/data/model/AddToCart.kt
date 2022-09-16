@@ -1,6 +1,5 @@
-package com.example.coffeeshop.presentation.viewmodel
+package com.example.coffeeshop.data.model
 
-import com.example.coffeeshop.data.model.CartItem
 import java.util.ArrayList
 
 class AddToCart {
